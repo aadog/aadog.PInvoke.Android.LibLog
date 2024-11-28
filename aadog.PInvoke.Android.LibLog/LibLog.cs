@@ -3,7 +3,7 @@ using aadog.PInvoke.Android.LibLog.Enums;
 
 namespace aadog.PInvoke.Android.LibLog
 {
-    public partial struct LibLog
+    public partial struct LibLogFunctions
     {
         [LibraryImport("log")]
         public static partial int __android_log_print(android_LogPriority prio, [MarshalAs(UnmanagedType.LPUTF8Str)] string tag, [MarshalAs(UnmanagedType.LPUTF8Str)] string fmt);
